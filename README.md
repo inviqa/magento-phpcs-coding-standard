@@ -35,13 +35,13 @@ PHP CodeSniffer will automatically scan Magento PHP files. To check design templ
 
 #Scrutinizer
 To add a custom CodeSniffer standard in your Scrutinizer build process see documentation here: https://scrutinizer-ci.com/docs/tools/php/code-sniffer.  
-You can add the lines below to the Scrutinizer build file (change the `git_version` hash accordingly):
+You can add the lines below to the Scrutinizer build file:
 ```
 checks:
     php:
         custom_coding_standard:
             git_repository: 'https://github.com/inviqa/magento-phpcs-coding-standard.git'
-            git_version: 'e3b7946ba5bc4065cec0fbe2725e7aa89284887a'
+            git_version: 'origin/master'
             ruleset_path: 'ruleset.xml'
 ```
 
