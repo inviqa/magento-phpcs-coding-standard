@@ -2,6 +2,8 @@
 <ruleset name="Ecg">
     <description>ECG Coding Standard</description>
 
+    <rule ref="Zend" />
+
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
     <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>

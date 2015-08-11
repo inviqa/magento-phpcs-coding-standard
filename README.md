@@ -1,3 +1,6 @@
+# Inviqa Fork
+This fork adds Zend Standard Configuration
+
 #ECG Magento Code Sniffer Coding Standard
 
 [![SensioLabsInsight Medal](https://insight.sensiolabs.com/projects/a06c37c6-0d79-4476-aff5-12d8ce1d8c53/big.png "SensioLabsInsight Medal")](https://insight.sensiolabs.com/projects/a06c37c6-0d79-4476-aff5-12d8ce1d8c53)
