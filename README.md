@@ -35,7 +35,12 @@ PHP CodeSniffer will automatically scan Magento PHP files. To check design templ
 
 #Scrutinizer
 To add a custom CodeSniffer standard in your Scrutinizer build process see documentation here: https://scrutinizer-ci.com/docs/tools/php/code-sniffer.  
-You can add the lines below to the Scrutinizer build file:
+You need to add the lines below to the Scrutinizer build file:
+```
+tools:
+    php_code_sniffer:
+        config: { standard: 'Ecg' }
+```
 ```
 checks:
     php:
