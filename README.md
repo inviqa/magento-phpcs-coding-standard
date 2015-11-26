@@ -50,6 +50,8 @@ checks:
             ruleset_path: 'ruleset.xml'
 ```
 
+*Note:* `custom_coding_standard` must be the first entry under `checks.php`. If other checks are performed first the original ECG standard will be loaded, which results in a conflict.
+
 #Requirements
 
 PHP 5.4 and up.
