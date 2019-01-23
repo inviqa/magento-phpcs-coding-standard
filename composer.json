@@ -1,16 +1,16 @@
 {
     "name": "inviqa/magento-coding-standard",
     "description": "A set of PHP_CodeSniffer rules and sniffs forked from the Ecg standard.",
-    "homepage": "https://github.com/minviqa/magento-phpcs-coding-standard",
+    "homepage": "https://github.com/inviqa/magento-phpcs-coding-standard",
     "license": "MIT",
     "authors": [
         {
             "name": "Inviqa Group Ltd",
-            "homepage": "http://inviqa.com",
+            "homepage": "https://inviqa.com",
             "role": "Maintainer"
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.6.0"
     }
 }
