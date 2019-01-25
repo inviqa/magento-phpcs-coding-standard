@@ -1,0 +1,6 @@
+version: '2.3'
+services:
+  composer:
+    image: composer
+    volumes:
+      - ./:/app

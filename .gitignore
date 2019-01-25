@@ -1,0 +1,3 @@
+bin/php*
+composer.lock
+src/magento

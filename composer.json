@@ -1,10 +1,35 @@
 {
-    "name": "inviqa/magento-coding-standard",
-    "description": "A set of PHP_CodeSniffer rules and sniffs forked from the Ecg standard.",
+    "name": "inviqa/magento1-coding-standard",
+    "description": "A set of PHP_CodeSniffer rules and sniffs for Magento1",
     "homepage": "https://github.com/inviqa/magento-phpcs-coding-standard",
     "license": "MIT",
+    "repositories": {
+        "magento-eqp": {
+            "type": "vcs",
+            "url": "https://github.com/magento/marketplace-eqp.git"
+        },
+        "magento-core": {
+            "type": "composer",
+            "url": "https://packages.firegento.com"
+        }
+    },
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.6.0",
+        "magento-ecg/coding-standard": "^3.1",
+        "magento/marketplace-eqp": "^2.0",
         "squizlabs/php_codesniffer": "^3.0"
+    },
+    "require-dev": {
+        "aydin-hassan/magento-core-composer-installer": "^1.5",
+        "magento/core": "^1.9.4"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "magento-root-dir": "src/magento"
+    },
+    "scripts": {
+        "sniff": "bin/phpcs --colors --standard=ruleset.xml -ns"
     }
 }
