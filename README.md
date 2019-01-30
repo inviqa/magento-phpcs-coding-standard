@@ -1,6 +1,10 @@
 # Inviqa - Magento1 Coding Standard
 
+
+Magento1 coding standard which consumes [Magento EQP1](https://github.com/magento/marketplace-eqp) and [Magento ECG](https://github.com/magento-ecg/coding-standard) with extra Sniffs and configuration.
+
 ## Installation & Usage
+
 ```bash
 composer config repositories.inviqa-magento1cs vcs https://github.com/inviqa/magento-phpcs-coding-standard
 composer require inviqa/magento1-coding-standard --update-with-dependencies --dev
@@ -32,6 +36,25 @@ Run Composer script
 ```sh
 composer.phar sniff Magento/app/code/local/Acme/ExampleModule/{Block,Helper,Model}
 ```
+
+### Config file
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="AcmeCompany">
+    <description>AcmeCompany - PHP CodeSniffer configuration</description>
+
+    <rule ref="vendor/inviqa/magento1-coding-standard"/>
+
+    <exclude-pattern>*/code/community/*</exclude-pattern>
+    <exclude-pattern>*/code/core/*</exclude-pattern>
+    <exclude-pattern>*/tests/*</exclude-pattern>
+    <exclude-pattern>*/data/*</exclude-pattern>
+    <exclude-pattern>*/sql/*</exclude-pattern>
+</ruleset>
+```
+
+Existing projects can require the Inviqa Magento1 coding standard by updating the `phpcs.xml` file like above.
 
 ## Requirements
 PHP >= 5.6
