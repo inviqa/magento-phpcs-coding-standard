@@ -36,5 +36,17 @@ composer.phar sniff Magento/app/code/local/Acme/ExampleModule/{Block,Helper,Mode
 ## Requirements
 PHP >= 5.6
 
+## Development
+
+A docker environment has been provided to update the composer dependencies - should composer / PHP not be available globally on the host development machine.
+
+```bash
+docker-compose up -d
+docker-compose rn --rm composer bash
+composer update | require acme/package
+```
+
+Commit the updated `composer.json` for peer review.
+
 ## Contribution
 Please feel free to contribute new sniffs or any fixes or improvements for the existing ones.
